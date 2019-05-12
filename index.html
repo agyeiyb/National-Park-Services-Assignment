@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>National Parks Near You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+  <div class="master-container js-master-container" for="master wrapper for all content">
+    <h1>Search for National Parks Near You!</h1>
+    <form for="inputting parameters for national parks search" class="parks-search-form js-parks-search-form">
+      <label for="state select">States: (please input state abbreviation separated by commas, no spaces)</label><br>
+      <input for="selecting states" class="state-select js-state-select" required /><br>
+      <label for="number-input">Number of Results:</label><br>
+      <input type="number" for="selecting number of results"  class="number-input js-number-input" value="10" min="1" max="50"/><br>
+      <input type="submit" for="submitting the form" class="submit-button js-submit-button" />
+    </form><br>
+    <div class="error-msg js-error-msg">
+
+    </div>
+    <div class="results-list js-results-list">
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
